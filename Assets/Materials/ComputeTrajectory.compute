@@ -1,0 +1,42 @@
+﻿#pragma kernel CSMain
+
+struct Info
+{
+	float2 pos;
+	float mass;
+};
+
+float3 start;
+int size;
+float step;
+
+float MapScale;
+int BodiesCount;
+
+RWStructuredBuffer<Info> Bodies;//prefix RW means that this param can be read and write
+RWStructuredBuffer<float4> ResultColors;//prefix RW means that this param can be read and write
+
+[numthreads(16, 16, 1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+	float3 p = start + step * id / 1024.0;
+	float n = noise(p) / 2 + noise(p * 2) / 4 + noise(p * 4) / 8 + noise(p * 8) / 16 + noise(p * 16) / 32;
+	
+	for (int i=0; i < BodiesCount; i++)
+	{
+		Info body = Bodies[i];
+		int x  = 512 + body.pos.x * MapScale;
+		int y  = 512 + body.pos.y * MapScale;
+		int idx = x + y * size;
+		ResultColors[idx] = float4(1, 1, 1, 1);
+	}	
+
+	//flush
+	{
+		int idx = id.x + id.y * size;
+		//Bodies[idx].mass = n;
+		//Bodies[idx].pos = float2(id.x, id.y);
+
+		//ResultColors[idx] = float4(n, n, n, 1);
+	}
+}
