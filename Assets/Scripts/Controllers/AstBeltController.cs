@@ -9,7 +9,7 @@ public class AstBeltController : MonoBehaviour
     public GameObject AsteroidPrefab;
     List<AsteroidInfo> asteroids = new List<AsteroidInfo>();
     private const int ASTEROIDS_COUNT = 200;
-    private float maxDeltaTime = 1000000;
+    private float maxDeltaTime = 700000;
 
     class AsteroidInfo
     {
@@ -58,6 +58,9 @@ public class AstBeltController : MonoBehaviour
         this.body = body;
 
         Random.InitState(desc.RandomSeed);
+        var period = 2 * Mathf.PI * body.OrbitRadius / body.OrbitalSpeed;
+        if (maxDeltaTime > period / 10)
+            maxDeltaTime = (float)period / 10;
 
         //build objects
         for (int i = 0; i < ASTEROIDS_COUNT; i++)
@@ -66,9 +69,9 @@ public class AstBeltController : MonoBehaviour
             var info = new AsteroidInfo();
             info.Object = ast;
             info.DeltaTime = (Random.value * 2 - 1) * maxDeltaTime;
-            info.DeltaTime2 = (3 + Random.value) * 5000;
-            info.Offset = Random.insideUnitSphere * (float)(3 * Constants.EARTH_RADIUS / body.Radius);
-            info.Scale = 0.05f + Random.value * Random.value;
+            info.DeltaTime2 = (3 + Random.value) * 3000;
+            info.Offset = Random.insideUnitSphere * (float)(200 * body.Radius / Constants.EARTH_RADIUS);
+            info.Scale = (0.05f + Random.value * Random.value) * 50;
             info.AddRotation = Random.rotation;
             info.AddRotation2 = Random.insideUnitSphere * 30;
             asteroids.Add(info);
