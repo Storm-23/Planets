@@ -57,7 +57,7 @@
 		wp.x /= 20;
 		wp.z /= 20;
 		wp *= _Frequency;
-		float res = noiseOctaves(wp, 7) * _HeightScale;
+		float res = noiseOctaves(wp, 7) * (2 + _HeightScale);
 		if (_Type == 0)
 		{
 			res = exp(res);

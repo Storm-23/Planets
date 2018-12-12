@@ -123,7 +123,10 @@ namespace PlanetsCore
         None,
         RockPlanet,
         GasPlanet,
-        Star
+        Star,
+        Ring,
+        Comet,
+        AsteroidBelt
     }
 
     /// <summary>

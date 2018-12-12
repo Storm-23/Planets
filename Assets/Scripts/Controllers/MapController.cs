@@ -40,7 +40,7 @@ public class MapController : MonoBehaviour {
         //create map points
         Helper.RemoveAllChildren(imMap.gameObject);
         foreach (var body in StateBus.Model.Bodies)
-        if (body.Mass > float.Epsilon)
+        if (body.Mass > Constants.EARTH_MASS / 100)
         {
             var obj = Instantiate(MapPointPrefab, imMap.transform);
             var ctrl = obj.GetComponent<MapBodyController>();

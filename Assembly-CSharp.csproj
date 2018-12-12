@@ -62,19 +62,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Blum\FastMobileBloom.cs" />
+    <Compile Include="Assets\Scripts\Controllers\AstBeltController.cs" />
     <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\CometController.cs" />
     <Compile Include="Assets\Scripts\Controllers\GuiController.cs" />
     <Compile Include="Assets\Scripts\Controllers\InputController.cs" />
     <Compile Include="Assets\Scripts\Controllers\MapBodyController.cs" />
     <Compile Include="Assets\Scripts\Controllers\MapController.cs" />
     <Compile Include="Assets\Scripts\Controllers\PlanetController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\RingController.cs" />
     <Compile Include="Assets\Scripts\Controllers\StarController.cs" />
     <Compile Include="Assets\Scripts\Controllers\TimeController.cs" />
     <Compile Include="Assets\Scripts\Core\Body.cs" />
-    <Compile Include="Assets\Scripts\NotUsed\FreeBody.cs" />
     <Compile Include="Assets\Scripts\Core\Model.cs" />
     <Compile Include="Assets\Scripts\Core\OrbitalBody.cs" />
     <Compile Include="Assets\Scripts\ModelLoader.cs" />
+    <Compile Include="Assets\Scripts\NotUsed\FreeBody.cs" />
     <Compile Include="Assets\Scripts\NotUsed\Script7.cs" />
     <Compile Include="Assets\Scripts\NotUsed\TrajectoryBuilder.cs" />
     <Compile Include="Assets\Scripts\PlanetsCore\Constants.cs" />
@@ -85,6 +88,7 @@
     <Compile Include="Assets\Scripts\Utils\Helper.cs" />
     <Compile Include="Assets\Scripts\Utils\ToolTip.cs" />
     <Compile Include="Assets\Scripts\Utils\ToolTipsRenderer.cs" />
+    <None Include="Assets\Materials\Ring.shader" />
     <None Include="Assets\Materials\Clouds.shader" />
     <None Include="Assets\Blum\FastMobileBloom.shader" />
     <None Include="Assets\Materials\Star.shader" />
@@ -94,16 +98,16 @@
     <None Include="Assets\Materials\ComputeTrajectory.compute" />
     <None Include="Assets\Materials\GasPlanet.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>D:/Projects_Other/Unity/Examples/Planets/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>D:/Projects_Other/Unity/Planets/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Projects_Other/Unity/Examples/Planets/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Projects_Other/Unity/Planets/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/Projects_Other/Unity/Examples/Planets/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/Projects_Other/Unity/Planets/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Projects_Other/Unity/Examples/Planets/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Projects_Other/Unity/Planets/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity2018.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -304,7 +308,7 @@
       <HintPath>C:/Program Files/Unity2018.2.8f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="PlanetsCore">
-      <HintPath>D:/Projects_Other/Unity/Examples/Planets/Assets/Scripts/PlanetsCore/obj/Debug/PlanetsCore.dll</HintPath>
+      <HintPath>D:/Projects_Other/Unity/Planets/Assets/Scripts/PlanetsCore/obj/Debug/PlanetsCore.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/Pasha/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>

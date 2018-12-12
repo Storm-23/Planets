@@ -21,6 +21,9 @@ public class ModelLoader : MonoBehaviour
     public GameObject GasPlanetPrefab;
     public GameObject StarPrefab;
     public GameObject PlanetPanel;
+    public GameObject RingPrefab;
+    public GameObject CometPrefab;
+    public GameObject AstBeltPrefab;
     public Button PlanetButtonPrefab;
 
     public static ModelLoader Instance { get; private set; }
@@ -126,10 +129,29 @@ public class ModelLoader : MonoBehaviour
                 body.GetComponent<StarController>().Build(desc, modelBody);
                 break;
             }
+            case SurfaceType.Ring:
+            {
+                body = Instantiate(RingPrefab, LevelHolder.transform);
+                body.GetComponent<RingController>().Build(desc, modelBody);
+                break;
+            }
+            case SurfaceType.AsteroidBelt:
+            {
+                body = Instantiate(AstBeltPrefab, LevelHolder.transform);
+                body.GetComponent<AstBeltController>().Build(desc, modelBody);
+                break;
+            }
+            case SurfaceType.Comet:
+            {
+                body = Instantiate(CometPrefab, LevelHolder.transform);
+                body.GetComponent<CometController>().Build(desc, modelBody);
+                break;
+            }
         }
 
-        //create button in GUI
+        //create buttons in GUI
         if (body != null)
+        if (desc.SurfaceType != SurfaceType.Ring)
         {
             var isSattellite = desc.Parent != null && desc.Parent.Parent != null;
             var bt = Instantiate(PlanetButtonPrefab, PlanetPanel.transform);

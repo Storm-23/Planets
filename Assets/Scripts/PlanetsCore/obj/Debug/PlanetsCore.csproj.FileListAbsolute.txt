@@ -3,3 +3,8 @@ D:\Projects_Other\Unity\Examples\Planets\Dlls\PlanetsCore.pdb
 D:\Projects_Other\Unity\Examples\Planets\Assets\Scripts\PlanetsCore\obj\Debug\PlanetsCore.csprojResolveAssemblyReference.cache
 D:\Projects_Other\Unity\Examples\Planets\Assets\Scripts\PlanetsCore\obj\Debug\PlanetsCore.dll
 D:\Projects_Other\Unity\Examples\Planets\Assets\Scripts\PlanetsCore\obj\Debug\PlanetsCore.pdb
+D:\Projects_Other\Unity\Planets\Dlls\PlanetsCore.dll
+D:\Projects_Other\Unity\Planets\Dlls\PlanetsCore.pdb
+D:\Projects_Other\Unity\Planets\Assets\Scripts\PlanetsCore\obj\Debug\PlanetsCore.csprojResolveAssemblyReference.cache
+D:\Projects_Other\Unity\Planets\Assets\Scripts\PlanetsCore\obj\Debug\PlanetsCore.dll
+D:\Projects_Other\Unity\Planets\Assets\Scripts\PlanetsCore\obj\Debug\PlanetsCore.pdb

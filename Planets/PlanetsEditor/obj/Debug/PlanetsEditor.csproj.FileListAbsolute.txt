@@ -24,3 +24,16 @@ D:\Projects_Other\Unity\Examples\Planets\Planets\PlanetsEditor\bin\Debug\FastTre
 D:\Projects_Other\Unity\Examples\Planets\Planets\PlanetsEditor\bin\Debug\PlanetsCore.dll
 D:\Projects_Other\Unity\Examples\Planets\Planets\PlanetsEditor\bin\Debug\PlanetsCore.pdb
 D:\Projects_Other\Unity\Examples\Planets\Planets\PlanetsEditor\obj\Debug\PlanetsEditor.Controls.PropertiesPanel.resources
+D:\Projects_Other\Unity\Planets\Planets\PlanetsEditor\bin\Debug\PlanetsEditor.exe.config
+D:\Projects_Other\Unity\Planets\Planets\PlanetsEditor\obj\Debug\PlanetsEditor.exe
+D:\Projects_Other\Unity\Planets\Planets\PlanetsEditor\obj\Debug\PlanetsEditor.pdb
+D:\Projects_Other\Unity\Planets\Planets\PlanetsEditor\bin\Debug\PlanetsEditor.exe
+D:\Projects_Other\Unity\Planets\Planets\PlanetsEditor\bin\Debug\PlanetsEditor.pdb
+D:\Projects_Other\Unity\Planets\Planets\PlanetsEditor\bin\Debug\FastTree.dll
+D:\Projects_Other\Unity\Planets\Planets\PlanetsEditor\bin\Debug\PlanetsCore.dll
+D:\Projects_Other\Unity\Planets\Planets\PlanetsEditor\bin\Debug\PlanetsCore.pdb
+D:\Projects_Other\Unity\Planets\Planets\PlanetsEditor\obj\Debug\PlanetsEditor.csprojResolveAssemblyReference.cache
+D:\Projects_Other\Unity\Planets\Planets\PlanetsEditor\obj\Debug\PlanetsEditor.Controls.PropertiesPanel.resources
+D:\Projects_Other\Unity\Planets\Planets\PlanetsEditor\obj\Debug\PlanetsEditor.MainForm.resources
+D:\Projects_Other\Unity\Planets\Planets\PlanetsEditor\obj\Debug\PlanetsEditor.Properties.Resources.resources
+D:\Projects_Other\Unity\Planets\Planets\PlanetsEditor\obj\Debug\PlanetsEditor.csproj.GenerateResource.Cache

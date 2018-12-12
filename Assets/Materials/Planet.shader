@@ -123,8 +123,8 @@
 		{
 			float3 cc = lerp(o.Albedo, _WaterColor, _WaterColor.a) * (1 - height);
 			o.Albedo = cc;
-			o.Smoothness = _WaterSmoothness;
-			o.Emission = o.Albedo * 0.02;
+			o.Smoothness = saturate(_WaterSmoothness);
+			o.Emission = o.Albedo * 0.05;
 		}
 		else
 		{

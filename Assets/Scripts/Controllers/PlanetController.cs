@@ -56,7 +56,7 @@ public class PlanetController : MonoBehaviour
         mat.SetFloat("_HeightScale", height);
         mat.SetFloat("_Palette", Random.value * 16);
         mat.SetFloat("_WaterPalette", Random.value * 16);
-        mat.SetFloat("_WaterSmoothness", Random.value * 0.7f);
+        mat.SetFloat("_WaterSmoothness", 0.5f + Random.value * 0.5f);
         mat.SetFloat("_Type", type);
 
         if (Random.value > 0.3 || height < 0.5)

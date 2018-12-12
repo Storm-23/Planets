@@ -50,7 +50,8 @@ namespace PlanetsEditor
 
         private void DrawOrbit(Graphics gr, double scale, OrbitalBodyDescription parent)
         {
-            if (parent.OrbitRadius > float.Epsilon)
+            if (parent.OrbitRadius > float.Epsilon &&
+                parent.Mass > Constants.EARTH_MASS / 50)
             {
                 //draw my orbit
                 var cx = (int)(gr.VisibleClipBounds.Width / 2);

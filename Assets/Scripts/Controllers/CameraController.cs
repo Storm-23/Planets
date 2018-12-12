@@ -31,7 +31,7 @@ public class CameraController : MonoBehaviour
             {
                 targetRadius = cameraTarget.lossyScale.z;
                 distance = 1.5f;
-                height = 0;
+                height = 0.1f;
                 StateBus.StopTime = true;
             }
         }
@@ -53,7 +53,7 @@ public class CameraController : MonoBehaviour
             //transform.LookAt(targetPos);
             transform.parent.position = pos;
             pos = transform.localPosition;
-            pos.y = Mathf.Lerp(pos.y, 0, Time.deltaTime * speed);
+            pos.y = Mathf.Lerp(pos.y, height * distance * targetRadius, Time.deltaTime * speed);
             pos.z = Mathf.Lerp(pos.z, - distance * targetRadius, Time.deltaTime * speed);
             transform.localPosition = pos;
             transform.localRotation = Quaternion.Lerp(transform.localRotation, Quaternion.identity, Time.deltaTime * speed);
